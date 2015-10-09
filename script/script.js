@@ -42,8 +42,10 @@ function runRandomSymbols(){
 	}
 }
 runRandomSymbols();
+//This line should be put forward
 
 console.log(Symbols);
+//checking bugs
 Symbols.forEach(DrawPic);
 function DrawPic(symbol){
 	console.log(symbol);
@@ -64,6 +66,7 @@ function DrawPic(symbol){
 			.attr('width',symbol.size)
 			.attr('height',symbol.size)
 			.style('fill',function() {return "hsl(" +Math.random()*120+",80%,80%)"})
+		//Lorenzo told me how to do that
 	}
 }
 
